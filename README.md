@@ -1,2 +1,3 @@
 # RadElectroRacers
-A 3D web based racing game
+
+A web based 3D racing game
