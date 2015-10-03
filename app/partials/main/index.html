@@ -1,0 +1,27 @@
+<div class="full-body">
+	<div id="main-body" class="main-body">
+		<scene></scene>
+		<img id="logo" src="/img/logo.png" border="0" />
+		<img id="winner" ng-src="/img/winner.png" border="0" ng-show="isWinner" />
+		<img id="loser" ng-src="/img/loser.png" border="0" ng-show="isLoser" />
+		<img id="counter" ng-src="{{ imageCounterSrc }}" border="0" ng-show="gameInProgress && ((countDown === 3) || (countDown === 2) || (countDown === 1))" />
+		<div id="score-panel" ng-show="gameInProgress">
+			<div class="table">
+				<div class="row">
+					<div class="cell">wins:&nbsp;</div>
+					<div class="cell">{{ playerOneWins }}</div>
+				</div>
+				<div class="row">
+					<div class="cell">loses:&nbsp;</div>
+					<div class="cell">{{ playerTwoWins }}</div>
+				</div>
+			</div>
+		</div>
+		<div id="game-select-panel" ng-hide="gameInProgress">
+			<div ng-click="singlePayerGame()" class="game-select">Single player game</div>
+		</div>
+		<div id="game-select-panel" ng-show="gameOver">
+			<div ng-click="newGame()" class="game-select">Restart game</div>
+		</div>
+	</div>
+</div>

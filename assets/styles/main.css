@@ -1,0 +1,109 @@
+/* Page Content Styles */
+
+    #page-content {
+		position: relative;
+		width: 100%;
+        height: 100%;
+	}
+
+/* Body */
+
+    .full-body {
+        width: 100%;
+        height: 100%;
+    }
+
+    .main-body {
+        width: 100%;
+        height: 100%;
+    }
+
+/* Game styles */
+
+    #logo {
+        position: fixed;
+        top: 20px;
+        left: 50%;
+        margin-left: -76px;
+        z-index: 100;
+    }
+
+    #counter {
+        position: fixed;
+        top: 135px;
+        left: 50%;
+        margin-left: -40px;
+        z-index: 200;
+    }
+
+    #winner {
+        position: fixed;
+        top: 135px;
+        left: 50%;
+        margin-left: -148px;
+        z-index: 200;
+    }
+
+    #loser {
+        position: fixed;
+        top: 135px;
+        left: 50%;
+        margin-left: -145px;
+        z-index: 200;
+    }
+    
+    #score-panel {
+        position: fixed;
+        bottom: 12px;
+        left: 50%;
+        margin-left: -6px;
+        font-family: 'electric_bootsregular';
+        font-size: 18px;
+        color: #ffffff;
+        z-index: 100;
+    }
+
+    #game-select-panel {
+        width: 320px;
+        position: fixed;
+        left: 50%;
+        top: 40%;
+        margin-left: -160px;
+        z-index: 300;
+    }
+
+    #game-select-panel .game-select {
+        padding: 10px;
+        font-family: 'electric_bootsregular';
+        font-size: 18px;
+        color: #ffffff;
+        cursor: pointer;
+        background: #ED3223;
+        border: 1px solid #cccccc;
+        text-align: center;
+    }
+
+    #game-select-panel .game-detail {
+        padding: 10px;
+        font-family: 'electric_bootsregular';
+        font-size: 14px;
+        color: #ffffff;
+        cursor: pointer;
+        background: #D72011;
+        border-right: 1px solid #cccccc;
+        border-left: 1px solid #cccccc;
+        text-align: center;
+    }
+
+    #game-select-panel .game-detail .game-link {
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+
+    #game-select-panel .game-select:hover {
+        background-color: #D72011;
+    }
+
+    #game-select-panel .game-select.selected {
+        background-color: #D72011;
+        border-top: 1px solid #D72011;
+    }
